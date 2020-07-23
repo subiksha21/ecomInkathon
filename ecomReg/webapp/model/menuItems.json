@@ -1,0 +1,22 @@
+{
+	"MenuItemsBev": [
+		{"item":"All Beverages"},
+		{"item":"Coffee"},
+		{"item":"tea"},
+		{"item":"Water"},
+		{"item":"Energy, Soft Drinks"},
+		{"item":"Health drinks and Supplements"},
+		{"item":"Fruit Juices, Drinks"}
+		],
+		"MenuItemssnack": [
+		{"item":"All Snacks & Branded Foods"},
+		{"item":"Biscuits & Cookies"},
+		{"item":"Noodles & Pasta"},
+		{"item":"Breakfast Cereals"},
+		{"item":"Spreads, Sauces, Ketchup"},
+		{"item":"Frozen Veggies & Snacks"},
+		{"item":"Snacks & Namkeen"},
+		{"item":"Chocolates & Candies"}
+		
+		]
+}

@@ -1,0 +1,33 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form">
+	<Dialog title="Savoury Stop" class="savouryHeader" >
+		<f:Form title="Verify your Email">
+			<f:layout>
+				<f:ResponsiveGridLayout adjustLabelSpan="false" columnsL="1" columnsM="1" columnsXL="2" emptySpanL="4" emptySpanM="0" emptySpanS="0"
+					emptySpanXL="0" singleContainerFullSize="false"></f:ResponsiveGridLayout>
+			</f:layout>
+			<f:formContainers>
+				<f:FormContainer>
+					<f:formElements>
+						<f:FormElement>
+							<f:fields>
+								<VBox>
+									<Text text="A four digit OTP will be sent to your Email" class="sapMText1"></Text>
+									
+									<Input liveChange="verifyEmail" placeholder="Enter your Email"></Input>
+									<MessageStrip text="mailid should be in abc@domain.com format" showIcon="false" type="Error" visible="{oVisibilityModel>/EmailPatternverify}"
+										showCloseButton="false" class="sapUiSmallMarginBottom"></MessageStrip>
+									<MessageStrip text="Please Enter your Email" showIcon="false" type="Error" visible="{oVisibilityModel>/EmailPatternsubmit}"
+										showCloseButton="false" class="sapUiSmallMarginBottom"></MessageStrip>
+								</VBox>
+							</f:fields>
+						</f:FormElement>
+					</f:formElements>
+				</f:FormContainer>
+			</f:formContainers>
+		</f:Form>
+		<buttons>
+			<Button  press="onpressemailverifyCancel" text="Cancel"/>
+			<Button  press="onpressemailverify" text="Submit"/>
+		</buttons>
+	</Dialog>
+</core:FragmentDefinition>

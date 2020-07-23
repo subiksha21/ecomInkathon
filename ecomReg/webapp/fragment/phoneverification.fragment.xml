@@ -1,0 +1,35 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form">
+	<Dialog title="Savoury Stop" class="savouryHeader" >
+		<f:Form title="Verify your Email">
+			<f:layout>
+				<f:ResponsiveGridLayout adjustLabelSpan="false" columnsL="1" columnsM="1" columnsXL="2" emptySpanL="4" emptySpanM="0" emptySpanS="0"
+					emptySpanXL="0" singleContainerFullSize="false"></f:ResponsiveGridLayout>
+			</f:layout>
+			<f:formContainers>
+				<f:FormContainer>
+					<f:formElements>
+						<f:FormElement>
+							<f:fields>
+								<VBox>
+									<Text text="A four digit OTP will be sent to your Contact Number" class="sapMText1"></Text>
+									
+									<Input liveChange="verifyContactNumber" type="Number" placeholder="Enter your Contact Number"></Input>
+									<MessageStrip text="Contact Number should be of length 10" showIcon="false" type="Error" visible="{oVisibilityModel>/Contactnopattern}"
+										showCloseButton="false" class="sapUiSmallMarginBottom"></MessageStrip>
+										<MessageStrip text="Please Enter Contact Number" showIcon="false" type="Error" visible="{oVisibilityModel>/ContactPatternsubmit}"
+										showCloseButton="false" class="sapUiSmallMarginBottom"></MessageStrip>
+								
+								
+								</VBox>
+							</f:fields>
+						</f:FormElement>
+					</f:formElements>
+				</f:FormContainer>
+			</f:formContainers>
+		</f:Form>
+		<buttons>
+			<Button  press="onpresscontactnoverifyCancel" text="Cancel"/>
+			<Button  press="onpresscontactnoverify" text="Submit"/>
+		</buttons>
+	</Dialog>
+</core:FragmentDefinition>

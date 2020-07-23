@@ -1,0 +1,85 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:tnt="sap.tnt" xmlns:f="sap.f"
+	xmlns:card="sap.f.cards" xmlns:w="sap.ui.integration.widgets" displayBlock="true" height="100%">
+	<Page id="root1">
+		<customHeader>
+			<core:Fragment fragmentName="ink.trng.proj.ecomReg.fragment.SecondHeader" type="XML"/>
+		</customHeader>
+		<Carousel class="carousel" loop="true" id="carouselSample" width="100%" height="40%"/>
+		<!-- make changes here -->
+		<HBox height="8%" justifyContent="Center" id="homeHbox1">
+			<Label text="{i18n>hboxtext2}" class="customText sapUiSmallMarginTop"/>
+		</HBox>
+		<Carousel height="25%" class="sapUiTinyMarginBegin" id="idHomecrsl1" pages="{ path: 'settings>/productsCarousel' }">
+			<customLayout>
+				<CarouselLayout visiblePagesCount="{settings>/pagesCount}"/>
+			</customLayout>
+			<GenericTile backgroundImage="{settings>image}">
+				<layoutData>
+					<f:GridContainerItemLayoutData rows="2" columns="2"/>
+				</layoutData>
+			</GenericTile>
+		</Carousel>
+		<HBox height="8%" justifyContent="Center" id="homeHbox2">
+			<Label text="{i18n>hboxtext1}" class="customText sapUiSmallMarginTop"/>
+		</HBox>
+		<f:GridContainer id="demoGrid" class="sapUiTinyMargin" snapToRow="true">
+			<f:layout>
+				<f:GridContainerSettings rowSize="80px" columnSize="75px" gap="15px"/>
+			</f:layout>
+			<f:layoutXS>
+				<f:GridContainerSettings rowSize="80px" columnSize="75px" gap="9px"/>
+			</f:layoutXS>
+			<GenericTile
+				backgroundImage="{ImgModel>/gridtileimage1}"
+				class="customTile" width="9.938rem">
+				<layoutData>
+					<f:GridContainerItemLayoutData rows="2" columns="2"/>
+				</layoutData>
+			</GenericTile>
+			<GenericTile
+				backgroundImage="{ImgModel>/gridtileimage2}"
+				class="customTile" width="9.938rem">
+				<layoutData>
+					<f:GridContainerItemLayoutData rows="2" columns="2"/>
+				</layoutData>
+			</GenericTile>
+			<f:Card>
+				<f:layoutData>
+					<f:GridContainerItemLayoutData rows="2" columns="4"/>
+				</f:layoutData>
+				<f:content>
+					<Image src="{ImgModel>/fcardimage}" width="100%"/>
+				</f:content>
+			</f:Card>
+		</f:GridContainer>
+		<HBox height="25%" class="sapUiTinyMarginTop">
+			<Image src="https://www.bigbasket.com/media/uploads/banner_images/NTP1048-1200X300-25thjune.jpg" height="100%" width="100%"/>
+		</HBox>
+		<HBox height="8%" justifyContent="Center" id="homeHbox3">
+			<Label text="{i18n>hboxtext3}" class="customText sapUiSmallMarginTop"/>
+		</HBox>
+		<Carousel height="25%" class="sapUiTinyMarginBegin" id="idHomecrsl2" pages="{ path: 'ImgModel>/brandsCarousel' }">
+			<customLayout>
+				<CarouselLayout visiblePagesCount="{settings>/pagesCount}"/>
+			</customLayout>
+			<GenericTile
+				backgroundImage="{ImgModel>image}"
+				class="brandTile">
+				<layoutData>
+					<f:GridContainerItemLayoutData rows="2" columns="2"/>
+				</layoutData>
+			</GenericTile>
+		</Carousel>
+		<HBox height="5%"/>
+		<HBox height="25%">
+			<Image src="https://www.bigbasket.com/media/uploads/banner_images/L2-NTP1040-1200x300-25thjun.jpg" height="100%" width="100%"/>
+		</HBox>
+		<HBox height="25%" class="sapUiSmallMarginTop">
+			<Image src="https://www.bigbasket.com/media/uploads/banner_images/NTP1077-1200X300-25thjuly.jpg" height="100%" width="100%"/>
+		</HBox>
+		<HBox height="5%"/>
+		<HBox height="30%" backgroundDesign="Solid" class="footerBox" justifyContent="Start">
+			<Text text="{i18n>footerTextHome}" class="FooterLabel sapUiTinyMargin"/>
+		</HBox>
+	</Page>
+</core:FragmentDefinition>

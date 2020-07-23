@@ -1,0 +1,30 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:tnt="sap.tnt">
+	<tnt:ToolHeader>
+		<MenuButton text="{i18n>menubtn1}">
+			<menu>
+				<Menu items="{menu>/MenuItemsBev}">
+					<MenuItem text="{menu>item}"/>
+				</Menu>
+			</menu>
+			<layoutData>
+				<OverflowToolbarLayoutData priority="NeverOverflow"/>
+			</layoutData>
+		</MenuButton>
+		<MenuButton text="{i18n>menubtn2}">
+			<menu>
+				<Menu items="{menu>/MenuItemssnack}">
+					<MenuItem text="{menu>item}"/>
+				</Menu>
+			</menu>
+			<layoutData>
+				<OverflowToolbarLayoutData priority="NeverOverflow"/>
+			</layoutData>
+		</MenuButton>
+		<ToolbarSpacer/>
+		<Button icon="sap-icon://person-placeholder" type="Transparent" press=".handleUserNamePress" tooltip="Log In">
+			<layoutData>
+				<OverflowToolbarLayoutData priority="NeverOverflow"/>
+			</layoutData>
+		</Button>
+	</tnt:ToolHeader>
+</core:FragmentDefinition>

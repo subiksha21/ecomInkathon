@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+.page2img {
+    background-image: url('https://cdn.vox-cdn.com/thumbor/6FNv3cYvcOMYzUBKm2OsRKudmjk=/1400x1050/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/19880108/shutterstock_561508699.jpg');
+    background-size: 100% 100%;
+}
+
+.sapMBar {
+    height: 0rem;
+    line-height: 2.75rem;
+}
+.HeadingText {
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: xx-large;
+    align-items: center;
+    align-self: center;
+    color: #000000;
+}
+.hideBtn{
+	margin-right: 0.7rem!important;
+}
+.Registerlink {
+    margin-left: 0.2rem;
+    font-size: 0.75rem;
+    margin-top: 0.21rem;
+}
+
+
+/* Text box*/
+
+.sapMInputBaseContentWrapper {
+    border: .0625rem solid #ccebff;
+    background: #ccebff;
+    border-radius: 0.5rem;
+    font-family: monospace;
+}
+
+
+/* Link*/
+
+
+/*.sapMLnk {
+    color: #0a6ed1;
+    text-decoration: none;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: normal;
+    font-family: "72","72full",Arial,Helvetica,sans-serif;
+    font-size: .7rem;
+}*/
+
+span.sapMBtnInner.sapMBtnAccept {
+    background-image: none;
+    background-color: #F67D12;
+    border-color: #F67D12;
+    color: #ffffff;
+}
+
+.termslink {
+    font-style: oblique;
+    font-size: 0.7rem;
+}
+
+.otpstatement {
+    color: #3D0BC7;
+}
+
+.customTextLogin {
+    font-size: 0.75rem !important;
+}
+
+.customCheckBoxText .sapMLabel{
+    font-size: 0.75rem ;
+}
+.registerCont{
+    background: #ffffffbf !important;
+    box-shadow: 0 0 0 0.0625rem rgba(0,0,0,0.1), 0 0.125rem 0.5rem 0 rgba(0,0,0,0.1) !important;
+    border-radius: 0.9rem !important;
+    border: solid 0.2rem #40b1c6!important;
+}
+.customInputField .sapMInputBaseInner{
+	border: solid 0.075rem #557fd3;
+    border-radius: 0.4rem;
+}
+.sapMText1 {
+    display: inline-block;
+    box-sizing: border-box;
+    white-space: pre-line;
+    word-wrap: break-word;
+    cursor: text;
+    font-size: .80rem;
+    font-family: "72", "72full", Comic;
+    line-height: normal;
+    color: #3D0BC7;
+    font-style: oblique;
+}
+
+#DialogBoxheader {
+    color: #0087D5;
+}
+
+.Registerheader {
+    font-size: xx-large;
+    align-items: center;
+    align-self: center;
+    color: #000000;
+}
+
+.sapFCard .sapFCardHeader {
+    position: relative;
+    flex-shrink: 0;
+    background: #016cb1;
+    border-bottom: none;
+    box-shadow: 0 0 0.25rem 0 rgba(0, 0, 0, 0.15), inset 0 -0.0625rem 0 0 #d9d9d9;
+    z-index: 1;
+    padding: 1rem;
+    display: flex;
+    outline: none;
+    border-radius: 1rem;
+    border-color: #016cb1;
+}
+
+
+/*changed here*/
+
+.sapFAvatarCircle .sapMImg,
+.sapFAvatarCircle .sapFAvatarImageHolder {
+    border-radius: 0%!important;
+    -webkit-border-radius: 0% !important;
+}
+
+
+/*changed here*/
+
+.sapFAvatarImageCover {
+    background-size: contain !important;
+}
+
+.inputs {
+    border-radius: 1rem;
+}
+
+.DobGender {
+    color: #000000;
+}
+
+span.sapMBtnInner.sapMBtnAccept {
+    background-image: none;
+    background-color: #F67D12;
+    border-color: #F67D12;
+    color: #ffffff;
+}
+
+
+/* Input box*/
+
+.sapMInputBaseContentWrapper {
+    border: .0625rem solid #ccebff;
+    background: #ccebff;
+    border-radius: 0.5rem;
+    font-family: monospace;
+}
+
+
+/* Message strip*/
+
+.sapUiFormEdit .sapMText {
+    min-height: 0.2rem;
+    padding-top: 0.005rem;
+    padding-bottom: 0.005rem;
+}
+
+
+.savouryHeader {
+    color: #ffffff;
+    background-color: #0087D5;
+    filter: none;
+    background-image: none;
+    border-color: #fff;
+}
+
+.sapMDialog>header.sapMDialogTitle .sapMTitle {
+    color: #ffffff;
+    margin: 0;
+    vertical-align: middle;
+}
+
+.OptionLabel {
+    color: #6a6d70;
+    font-size: .65rem;
+    font-family: "72", "72full", Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    display: inline-block;
+    white-space: nowrap;
+    cursor: text;
+}

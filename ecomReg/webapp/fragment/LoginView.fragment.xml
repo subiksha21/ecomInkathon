@@ -1,0 +1,134 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:tnt="sap.tnt" xmlns:f="sap.f"
+	xmlns:card="sap.f.cards" xmlns:w="sap.ui.integration.widgets" displayBlock="true" height="100%">
+	<Page id="loginPage" class="page2img">
+		<customHeader>
+			<core:Fragment fragmentName="ink.trng.proj.ecomReg.fragment.SecondHeader" type="XML"/>
+		</customHeader>
+		<content>
+			<VBox>
+				<VBox alignItems="Center">
+					<f:Card class="sapUiMediumMargin registerCont" width="85%" height="70%" id="cardid1" visible="{oVisibilityModel>/LoginPage}">
+						<f:content>
+							<VBox height="100%" class="sapUiLargeMargin" justifyContent="SpaceBetween" width="100%" alignContent="SpaceBetween">
+								<VBox alignItems="Center">
+									<Label text="Login here" class="HeadingText sapUiSmallMarginBottom"/>
+								</VBox>
+								<VBox>
+									<Input type="Email" placeholder="Email" liveChange="eMailLogin" class="customInputField"/>
+									<MessageStrip text="mailid should be in abc@domain.com format" showIcon="false" type="Error"
+										visible="{oVisibilityModel>/Forgotpasswordemail}" showCloseButton="false" class="sapUiMediumMarginBottom"></MessageStrip>
+								</VBox>
+								<HBox >
+									<Input type="Password" width="100%" placeholder="Password" liveChange="passWordLogin" visible="{oVisibilityModel>/addpass1}"
+										class="customInputField"/>
+									<Input id="newshowpasswordid" width="100%" visible="{oVisibilityModel>/showpass1}" class="customInputField"></Input>
+									<Button icon="sap-icon://show" press="showPassword1" visible="{oVisibilityModel>/showpassbtn1}"></Button>
+									<Button icon="sap-icon://hide" press="hidePassword1" visible="{oVisibilityModel>/hidepassbtn1}"></Button>
+								</HBox>
+								<VBox alignItems="End">
+									<Link text="forgot password?" class="sapUiSmallMarginBottom Registerlink" press="OnPressingForgotPassword"/>
+								</VBox>
+								<VBox alignItems="Center">
+									<Button type="Accept" text="Login" press="OnpressLogin" width="100%" class="SubmitButton sapUiSmallMarginBottom"/>
+								</VBox>
+								<VBox alignItems="Center">
+									<HBox>
+										<Text text="New User?" class="customTextLogin sapMText"/>
+										<Link text="Register here" press="OnPressingRegisterhereButton" class="Registerlink"/>
+									</HBox>
+								</VBox>
+							</VBox>
+						</f:content>
+					</f:Card>
+				</VBox>
+				<VBox alignItems="Center">
+					<f:Card class="sapUiMediumMargin registerCont" width="85%" height="70%" id="cardid2" visible="{oVisibilityModel>/RegisterPage}">
+						<f:content>
+							<VBox height="100%" class="sapUiLargeMargin" justifyContent="SpaceBetween" width="95%">
+								<VBox alignItems="Center">
+									<Label text="Register here" class="HeadingText sapUiSmallMarginTopBottom"></Label>
+								</VBox>
+								<VBox>
+									<Input valueLiveUpdate="true" liveChange="firstName" placeholder="First Name" width="95%" class="customInputField"/>
+									<MessageStrip text="First Name should not be empty and Should contains only Alphabets" showIcon="false"
+										visible="{oVisibilityModel>/FirstName}" showCloseButton="false" type="Error" class="sapUiMediumMarginBottom"></MessageStrip>
+								</VBox>
+								<VBox>
+									<Input valueLiveUpdate="true" liveChange="lastName" placeholder="Last Name" width="95%" class="customInputField"/>
+									<MessageStrip text="Last Name should not be empty and should contains only Alphabets" showIcon="false"
+										visible="{oVisibilityModel>/LastName}" showCloseButton="false" type="Error" class="sapUiMediumMarginBottom"></MessageStrip>
+								</VBox>
+								<VBox>
+									<Input valueLiveUpdate="true" type="Number" liveChange="contactNumber" width="95%" placeholder="Contact Number" class="customInputField"/>
+									<MessageStrip text="Contact Number should be of length 10" type="Error" showIcon="false" visible="{oVisibilityModel>/MaxLength1}"
+										showCloseButton="false" class="sapMediumMarginBottom"></MessageStrip>
+								</VBox>
+								<VBox>
+									<Input type="Email" liveChange="eMail" placeholder="Email" width="95%" class="customInputField"/>
+									<MessageStrip text="mailid should be in abc@domain.com format" showIcon="false" type="Error" visible="{oVisibilityModel>/EmailPattern}"
+										showCloseButton="false" class="sapUiMediumMarginBottom"></MessageStrip>
+								</VBox>
+								<VBox>
+									<HBox >
+										<Input type="Password" width="100%" placeholder="Password" liveChange="passWord" visible="{oVisibilityModel>/addpass}"
+											class="customInputField"/>
+										<Input id="showpasswordid" width="100%" visible="{oVisibilityModel>/showpass}" class="customInputField"></Input>
+										<Button icon="sap-icon://show" press="showPassword" visible="{oVisibilityModel>/showpassbtn}" class="hideBtn"></Button>
+										<Button icon="sap-icon://hide" press="hidePassword" visible="{oVisibilityModel>/hidepassbtn}" class="hideBtn"></Button>
+									</HBox>
+									<VBox>
+										<MessageStrip text=" Length of password should be between 6-12" showIcon="false" type="Error" visible="{oVisibilityModel>/lengthcheck}"
+											showCloseButton="false" class="sapUiMediumMarginBottom"></MessageStrip>
+										<MessageStrip text="Password must contain atleast one Uppercase character " type="Error" showIcon="false" showCloseButton="false"
+											class="sapUiMediumMarginBottom" visible="{oVisibilityModel>/Uppercase}"></MessageStrip>
+										<MessageStrip text="Password must contain atleast one Numeric character " type="Error" showIcon="false" showCloseButton="false"
+											class="sapUiMediumMarginBottom" visible="{oVisibilityModel>/Numeric}"></MessageStrip>
+										<MessageStrip text="Password must contain atleast one lowercase character " type="Error" showIcon="false" showCloseButton="false"
+											visible="{oVisibilityModel>/Lowercase}" class="sapUiMediumMarginBottom"></MessageStrip>
+										<MessageStrip text="Password must contain atleast one special character" type="Error" showIcon="false" showCloseButton="false"
+											visible="{oVisibilityModel>/Strongpassword}" class="sapUiMediumMarginBottom"></MessageStrip>
+										<MessageStrip text="Strong Password built successfully" type="Success" showIcon="true" showCloseButton="true"
+											visible="{oVisibilityModel>/successPassword}" class="sapUiMediumMarginBottom"></MessageStrip>
+									</VBox>
+								</VBox>
+								<VBox>
+									<Input type="Password" liveChange="confirmPassword" placeholder="Confirm Password" width="95%" class="customInputField"/>
+									<MessageStrip text="Please enter same password " showIcon="false" type="Error" visible="{oVisibilityModel>/confirmPasswordpattern}"
+										showCloseButton="false" class="sapUiMediumMarginBottom"></MessageStrip>
+								</VBox>
+								<Label text="Date of birth" class="DobGender"></Label>
+								<DatePicker id="date" width="95%"
+									value="{ path:'/DateValue', type:'sap.ui.model.type.Date', formatOptions: { style: 'short', strictParsing: true }, constraints: { } }"
+									class="customInputField" minDate="{date>/minDate}" maxDate="{date>/maxDate}" valueFormat="yyyyMMdd"/>
+								<VBox>
+									<Label labelFor="rbg2" text="Gender" class="DobGender"/>
+									<RadioButtonGroup id="genderid" columns="3" select="onSelectGender" class="sapUiMediumMarginBottom">
+										<RadioButton id="RB2-1" text="Male"/>
+										<RadioButton id="RB2-2" text="Female"/>
+										<RadioButton id="RB2-3" text="Other"/>
+									</RadioButtonGroup>
+								</VBox>
+								<HBox>
+									<CheckBox text="I accept the" select="Isselected" class="customCheckBoxText"/>
+									<Link text="Terms and Conditions" press="handleLinkPress" class="Registerlink sapUiSmallMarginTop"/>
+								</HBox>
+								<HBox alignItems="Center" justifyContent="Center">
+									<Button type="Accept" text="Submit" press="Onpresssubmit" class="SubmitButton sapUiSmallMargin"></Button>
+									<Button type="Reject" text="Cancel" press="OnpressCancel" class="SubmitButton sapUiTinyMargin"/>
+								</HBox>
+								<VBox alignItems="Center" visible="{oVisibilityModel>/AfterSubmit}">
+									<Text text="Please select option for Verification" class="OptionLabel"></Text>
+									<HBox>
+										<Button icon="sap-icon://email" type="Emphasized" tooltip="Email verification" press="EmailVerification" class="sapUiSmallMargin"></Button>
+										<ToolbarSpacer width="40%"></ToolbarSpacer>
+										<Button icon="sap-icon://call" type="Emphasized" tooltip="Phone Number verification" press="PhoneNoVerification" class="sapUiSmallMargin"></Button>
+									</HBox>
+								</VBox>
+							</VBox>
+						</f:content>
+					</f:Card>
+				</VBox>
+			</VBox>
+		</content>
+	</Page>
+</core:FragmentDefinition>

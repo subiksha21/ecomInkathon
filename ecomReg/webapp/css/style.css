@@ -1,0 +1,106 @@
+/* Enter your custom styles here */
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+.sapMLabel.customText {
+    color: #f3f4f6;
+    font-size: 0.875rem;
+    font-family: "72","72full",Arial,Helvetica,sans-serif;
+    font-weight: normal;
+    display: inline-block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: text;
+}
+.sapTntNavLIItem>.sapUiIcon {
+    color: #ff5717!important;
+}
+.sapTntToolHeader.sapMTB {
+    background-color: #016cb1!important;
+}
+.sapMCrslBottomOffset .sapMCrslItem {
+     padding-bottom: 0px !important; 
+}
+.sapMCrslControlsNoArrows.sapMCrslControlsBottom{
+    background: none!important;
+    border-top: 0px!important;
+}
+.sapMCrslControls.sapMCrslControlsBottom, .sapMCrslControlsNoArrows.sapMCrslControlsBottom {
+    position: absolute;
+    top: 60%;
+    bottom: -2.5rem !important;
+    width: 100%;
+}
+.sapMCrslControlsNoArrows .sapMCrslBulleted, .sapMCrslControlsNoArrows .sapMCrslNumeric .carousel{
+    width: 100%;
+    position: relative;
+    bottom: -3.35rem !important;
+    align-self: center;
+}
+/*.sapMCrslControlsNoArrows .sapMCrslBulleted, .sapMCrslControlsNoArrows .sapMCrslNumeric .customCrsl {
+    width: 100%;
+    position: relative;
+    bottom: -50px;
+    align-self: center;
+}*/
+.titleImage{
+    height: 115%;
+}
+.sapMCrslControls .sapMCrslPrev, .sapMCrslHud .sapMCrslPrev, .sapMCrslControls .sapMCrslNext, .sapMCrslHud .sapMCrslNext {
+    background: #fff;
+    border: 1px solid #0854a0;
+    color: #0854a0;
+    top: 6.25rem !important;
+}
+.customImgWidthPhone{
+	width: 46%;
+}
+.sapMLabel.customText{
+	font-family: 'Balsamiq Sans', cursive;
+	color: #000000;
+	font-weight: bold;
+}
+.customCrsl{
+	height:19%!important;
+}
+ .sapMLabel.customText2{
+	font-family: 'Balsamiq Sans', cursive;
+	color: #000000;
+	
+}
+.sapMLabel.customText3{
+	font-family: 'Balsamiq Sans', cursive;
+	color: #000000;
+
+}
+.customHbox{
+	height:5%!important;
+}
+
+.customTile{
+	background-position: bottom;
+}
+.Hometitle{
+	font-family: 'Balsamiq Sans', cursive;
+	color: #F6C1A3;
+	font-weight: bold;
+	font-size: 0.6rem;
+}
+.brandTile{
+	    background-position: center;
+}
+.footerBox{
+	background-color: #016cb1;
+}
+.HomepageGrid{
+	margin: 0.3rem;
+}
+.sapMSFF {
+    border-radius: 1rem !important;
+}
+.FooterLabel{
+	font-family: 'Balsamiq Sans', cursive;
+	color: #ffffff;
+	font-size: 0.6rem;
+}
+
+

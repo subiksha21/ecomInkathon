@@ -1,0 +1,22 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:tnt="sap.tnt" displayBlock="true">
+	<tnt:ToolHeader>
+		<Image
+			src="{settings>/homeIconSrc}"
+			press="onHomeIconPress" class="titleImage" id="idTitle">
+			<layoutData>
+				<OverflowToolbarLayoutData priority="NeverOverflow"/>
+			</layoutData>
+		</Image>
+		<ToolbarSpacer/>
+		<SearchField width="40%" class="HomePageSf">
+			<layoutData>
+				<OverflowToolbarLayoutData priority="NeverOverflow"/>
+			</layoutData>
+		</SearchField>
+		<Button icon="sap-icon://cart-5" type="Transparent" tooltip="{i18n>cart}">
+			<layoutData>
+				<OverflowToolbarLayoutData priority="NeverOverflow"/>
+			</layoutData>
+		</Button>
+	</tnt:ToolHeader>
+</core:FragmentDefinition>

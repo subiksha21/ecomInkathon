@@ -1,0 +1,32 @@
+<mvc:View controllerName="ink.trng.proj.ecomReg.controller.IndexPage" xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+	xmlns:tnt="sap.tnt" xmlns:f="sap.f" xmlns:card="sap.f.cards" xmlns:w="sap.ui.integration.widgets" displayBlock="true" height="100%">
+	<App id="app">
+		<tnt:ToolPage id="toolPage1">
+			<tnt:header>
+				<core:Fragment fragmentName="ink.trng.proj.ecomReg.fragment.MainHeader" type="XML"/>
+			</tnt:header>
+			<tnt:mainContents>
+				<NavContainer id="pageContainer" initialPage="root1">
+					<pages>
+						<core:Fragment fragmentName="ink.trng.proj.ecomReg.fragment.HomePage" type="XML"/>
+						<core:Fragment fragmentName="ink.trng.proj.ecomReg.fragment.LoginView" type="XML"/>
+						<Page id="page1">
+							<customHeader>
+								<core:Fragment fragmentName="ink.trng.proj.ecomReg.fragment.SecondHeader" type="XML"/>
+							</customHeader>
+							<content>
+								<Text text="{i18n>navPage}"/>
+							</content>
+						</Page>
+						<ScrollContainer id="page2" horizontal="false" vertical="true" height="100%">
+							<Text text="Lorem ipsum "/>
+						</ScrollContainer>
+						<ScrollContainer id="root2" horizontal="false" vertical="true" height="100%">
+							<Text text="This is the root page of the second element"/>
+						</ScrollContainer>
+					</pages>
+				</NavContainer>
+			</tnt:mainContents>
+		</tnt:ToolPage>
+	</App>
+</mvc:View>

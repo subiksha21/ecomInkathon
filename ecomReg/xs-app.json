@@ -1,0 +1,19 @@
+{
+  "welcomeFile": "/ecomReg/index.html",
+  "authenticationMethod": "route",
+  "logout": {
+    "logoutEndpoint": "/do/logout"
+  },
+  "routes": [
+  	{
+      "source": "^/register_CF",
+      "target": "/",
+      "destination": "register_CF"
+    },
+    {
+      "source": "^/ecomReg/(.*)$",
+      "target": "$1",
+      "localDir": "webapp"
+    }
+  ]
+}
